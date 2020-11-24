@@ -6,7 +6,7 @@ from db.run_sql import run_sql
 
 
 def save(artist):
-    sql = "INSERT INTO artist (name) VALUES (%s) RETURNING id"
+    sql = "INSERT INTO artists (name) VALUES (%s) RETURNING id"
     #  for last item we are referencing the album objects, artist objects id as a reference
 
     values = [artist.name]

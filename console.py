@@ -6,5 +6,8 @@ import repositories.artist_repository as artist_repository
 
 
 metallica = Artist('Metallica')
-black_album = Album('Black Album', 'Heavy Metal', 'Metallica')
+artist_repository.save(metallica)
+black_album = Album('Black Album', 'Heavy Metal', metallica)
 album_repository.save(black_album)
+
+pdb.set_trace()
